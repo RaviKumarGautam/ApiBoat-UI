@@ -1,0 +1,129 @@
+/******* ALL PAGES COMMON CSS START *******/
+.all-pages-section{
+    margin-top: 75px;
+    background-image: url("../images/all-pages-section.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+.portfolio-heading{color: #fefdfd;}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    color: #fefdfd;
+    vertical-align:top;}
+ 
+.breadcrumb-item{margin: 0;} 
+.breadcrumb-item a{color: #ffffff !important;}
+.breadcrumb-item.active{color: yellow;} 
+
+
+
+/******* about us page CSS START *******/
+
+/* section-1 Who We Are css start */
+.about-us-img{padding: 80px 10px 10px 10px;}
+.who-we-are-heading{padding-top: 50px;}
+
+
+/* section-2 vision mission css start */
+.about-us-vector{
+    background-image: url("../images/about-us-page/about-us-vector.png");
+    background-repeat: no-repeat;}
+
+.vision{
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+    transform: scale(1);
+    transition: ease-in-out 0.9s;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2), 0 0 20px 10px rgba(0, 0, 0, 0.19);}
+
+
+.vision:hover{
+    color: #fefdfd;
+    border-left: 4px solid #fefdfd;
+    border-right: 4px solid #fefdfd;
+    background-color: #50076e;
+    transform: scale(0.9);
+    transition: ease-in-out 0.9s;}
+
+.vision-img{width: 200px; padding: 20px 0;}
+.vision h2, .vision p{padding-top: 20px;}
+
+
+/* section-3 css start */
+.guarantee-card{
+    background-color: #fefdfd;
+    margin: 40px 10px;
+    padding: 15px;
+    border-left: 3px solid #50076e;
+    border-right: 3px solid #50076e;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 15px;
+    transition: ease-in-out 0.9s;}
+
+.guarantee-card:hover{    
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15), 0 0 20px 10px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 0.9s;}
+
+.guarantee-card img{width: 40%;} 
+
+
+
+/******* Contact us page CSS START *******/
+
+/* section-1 css start */
+
+.contact-us{padding: 15px;}
+.contact-us .get-in-touch{padding: 20px;}
+.contact-us .get-in-touch p{padding: 10px 0;}
+.contact-us .get-in-touch p a{color: #000;}
+
+.contact-us .get-in-touch p .fa-phone-volume,
+.contact-us .get-in-touch p .fa-envelope-open-text,
+.contact-us .get-in-touch p .fa-map{color: #50076e; font-size: 28px; margin-right: 20px;}
+
+.contact-us .get-in-touch p a i{font-size: 22px; padding-right: 10px;}
+.contact-us .get-in-touch p a i:hover{color: #50076e;}
+
+
+
+/******* Security page CSS START *******/
+.security{
+    color: #fefdfd;
+    background-image: url("../images/security/secure-with-us.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;}
+
+.security-img{margin-left: 70px;}
+
+
+
+
+/******* MEDIA QUERY START *******/
+@media screen and (min-device-width: 992px) and (max-device-width: 1199px) { 
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    .point-fingers{display: none;}
+}
+
+@media screen and (min-device-width: 576px) and (max-device-width: 767px) {
+    .point-fingers{display: none;} 
+}
+
+@media screen and (min-device-width: 412px) and (max-device-width: 575px) { 
+    .point-fingers{display: none;}
+
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 411px) { 
+    
+    .who-we-are-heading{padding-top: 0;}
+    .about-us-img{padding: 20px;}
+
+    .point-fingers{display: none;}
+}

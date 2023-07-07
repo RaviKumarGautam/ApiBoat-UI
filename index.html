@@ -11,93 +11,46 @@
         <meta property="og:type" content="website" />
         
         <link rel="icon" href="./images/fav-icon.png" sizes="16x16" type="image/png">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
-        <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/fontawesome.min.css">
-        <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/brands.min.css">
-        <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/regular.min.css">
-        
-        <!-- jQuery Library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <!-- Slider JS -->
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/svg-with-js.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./css/style.css">
+        
+        <!-- jQuery Library -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Slider JS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
         <title>Api Boat</title>
 
     </head>
 <body> 
 
+<!-- Javascript Code for access Navbar and Footer -->
+    <script>
+        $(function(){
+            $("#navbar").load("navbar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
 <!-- NAVBAR START -->
-    <div class="header"> 
-
-    <!-- NAVBAR START --> 
-        <div id="myHeader" class="sticky"> 
-            <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark navbar-inner">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="./images/logo_white.png" class="logo" alt="Api Boat">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-            
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">HOME</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">ABOUT US</a>
-                            </li>
-            
-                            <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  SERVICES
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">option 1</a></li>
-                                    <li><a class="dropdown-item" href="#">option 2</a></li>
-                                    <li><a class="dropdown-item" href="#">option 3</a></li>
-                                    <li><a class="dropdown-item" href="#">option 4</a></li>
-                                </ul>
-                            </li> -->
-            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#products">PRODUCTS</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#security">SECURITY</a>
-                            </li>
-            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#why-us">WHY US</a>
-                            </li>
-            
-                            <!-- <li class="nav-item">
-                                <input class="nav-btn btn" type="search" id="nav-search" name="nav-search" placeholder="SEARCH...">
-                            </li> -->
-            
-                        </ul>
-                    </div>
-                </div>     
-            </nav>
-        </div>
-    <!-- NAVBAR END --> 
-
-    </div>
+    <div id="navbar"></div>
 <!-- NAVBAR END -->
     
 
 <!-- Header start -->
     <section class="section-space header-section">
         <div class="container">
-            <div class="row"> 
+            <div class="row pt-5"> 
                 <div class="col-lg-6 col-md-8">
                     <h1 class="header-heading audiowide aos-init" data-aos="slide-down">
                         NexGen <br> Business Banking
@@ -105,7 +58,7 @@
                     <p class="pt-3 aos-init" data-aos="slide-up">
                         It is a connected business banking platform designed to simplify financial management for modern businesses. Whether you're a startup or an established enterprise, We are designed to help you streamline your banking & financial operations, improve safety & security, and empower optimal resource allocation for growth.
                     </p>
-                    <a href="#" class="mt-4 see-more-btn btn aos-init" data-aos="slide-up">
+                    <a href="" class="mt-4 see-more-btn btn aos-init" data-aos="slide-up">
                         View-Documentation
                     </a>
                 </div> 
@@ -138,7 +91,7 @@
 <!-- section-1 About us End -->
 
 
-<!-- section-2 start -->
+<!-- section-2 UPGRADED start -->
     <section class="section-space">
         <div class="container">
             <div class="row py-5">
@@ -169,7 +122,7 @@
             </div>
         </div>
     </section>
-<!-- section-2 End -->
+<!-- section-2 UPGRADED End -->
 
 
 <!-- section-3 scale with us start -->
@@ -213,7 +166,7 @@
             <div class="row">
 
                 <div class="col-lg-4 col-md-4 pt-5 aos-init" data-aos="fade-down-right">
-                    <div class="card">
+                    <div class="card security-card">
                         <img class="card-img-top" src="./images/security-1.png" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title text-center">Multi-Account Management</h4>
@@ -223,7 +176,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 pt-5 aos-init" data-aos="slide-up">
-                    <div class="card">
+                    <div class="card security-card">
                         <img class="card-img-top" src="./images/security-2.png" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title text-center">Multi-Account Management</h4>
@@ -233,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 pt-5 aos-init" data-aos="fade-down-left">
-                    <div class="card">
+                    <div class="card security-card">
                         <img class="card-img-top" src="./images/security-3.png" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title text-center">Multi-Account Management</h4>
@@ -311,30 +264,18 @@
 <!-- section-6 our products End-->
 
 
-<!-- section-7 start -->
+<!-- section-7 How We Work start -->
     <section class="section-7-img">
         <div class="container-fluid section-space overlay social-marketing">
             <div class="row mt-4">
-                <div class="col-lg-3 col-sm-6 mb-4 marketing-cards aos-init" data-aos="slide-down">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="./images/New folder/brand.png" class="img-fluid" alt="Branding-img">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>
-                                    Your visual identity goes hand in hand with your brand story to create a cohesive picture for customers and prospects. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, esse!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-center my-3 flip-card-title">Branding</h3>
-                </div>
+                <h1 class="audiowide text-center pb-5 aos-init" data-aos="slide-left">
+                    How We Work
+                </h1>
                 <div class="col-lg-3 col-sm-6 mb-4 marketing-cards aos-init" data-aos="zoom-out">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="./images/New folder/discover.jpg" class="img-fluid" alt="discover-img">
+                                <img src="./images/how-we-work/discover.jpg" class="img-fluid" alt="discover-img">
                             </div>
                             <div class="flip-card-back">
                                 <p>
@@ -349,7 +290,22 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="./images/New folder/design.jpg" class="img-fluid" alt="design-img">
+                                <img src="./images/how-we-work/brand.png" class="img-fluid" alt="Branding-img">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>
+                                    Your visual identity goes hand in hand with your brand story to create a cohesive picture for customers and prospects. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, esse!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-center my-3 flip-card-title">Branding</h3>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 marketing-cards aos-init" data-aos="slide-up">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./images/how-we-work/design.jpg" class="img-fluid" alt="design-img">
                             </div>
                             <div class="flip-card-back">
                                 <p>
@@ -364,7 +320,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="./images/New folder/develop.jpg" class="img-fluid" alt="develop-img">
+                                <img src="./images/how-we-work/develop.jpg" class="img-fluid" alt="develop-img">
                             </div>
                             <div class="flip-card-back">
                                 <p>
@@ -378,7 +334,7 @@
             </div>
         </div>
     </section>
-<!-- section-7 End -->
+<!-- section-7 How We Work End -->
 
 
 <!-- section-8 Next Step start -->
@@ -489,74 +445,27 @@
 <!-- section-10 partners End-->
 
 
-<!-- footer start -->
-    <footer class="footer">
-        <div class="container pb-4">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 aos-init" data-aos="slide-right">
-                    <h1>
-                        <img class="img-fluid footer-logo" src="./images/logo_white.png" alt="logo">
-                    </h1>
-                    <p class="footer-para">
-                        We boast a product list of over 80 APIs across a multitude of segments such as Banking, Verification, Insurance, Lending, Investment & Travel. Subsequently, we satisfy the key API requirements of all our current.
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 aos-init" data-aos="slide-down">
-                    <h4 class="footer-heading">HOME</h4>
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="#">About Us</a></li>
-                        <li class="footer-item"><a href="#">About Us</a></li>
-                        <li class="footer-item"><a href="#">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 aos-init" data-aos="slide-up">
-                    <h4 class="footer-heading">QUICK LINKS</h4>
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="#">About Us</a></li>
-                        <li class="footer-item"><a href="#">About Us</a></li>
-                        <li class="footer-item"><a href="#">About Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row copyright-bg">
-                <div class="copyright">
-                    <p class="">
-                        2021-2023 © Copyright | All Rights Reserved
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
- <!-- footer End -->
-
+<!-- Footer START -->
+    <div id="footer"></div>
+<!-- Footer END -->
 
 
     <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
-    <script src="./fontawesome-free-5.15.4-web/js/all.min.js"></script>
-    <script src="./fontawesome-free-5.15.4-web/js/brands.min.js"></script>
-    <script src="./fontawesome-free-5.15.4-web/js/fontawesome.min.js"></script>
-    <script src="./fontawesome-free-5.15.4-web/js/regular.min.js"></script>
-
-    <script>
-        window.onscroll = function() {myFunction()};
-    
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-    
-        function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-        }
-    </script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/brands.min.js"> 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/fontawesome.min.js"> 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/regular.min.js"> 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/solid.min.js"> 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/solid.min.js"> 
+    </script>
+    
     <script>
       AOS.init({
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -577,11 +486,13 @@
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
       });
     </script>
+
      <script type="text/javascript">
         _linkedin_partner_id = "3623348";
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
         window._linkedin_data_partner_ids.push(_linkedin_partner_id);
     </script>
+
     <script type="text/javascript">
         (function(l) {
         if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
@@ -592,6 +503,7 @@
         b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
         s.parentNode.insertBefore(b, s);})(window.lintrk);
     </script>
+    
     <noscript>
         <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3623348&fmt=gif" />
     <noscript>

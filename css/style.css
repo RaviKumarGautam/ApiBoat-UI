@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 *{
     margin: auto;
-    font-family: Century Gothic, CenturyGothic, sans-serif; 
+    font-family: Century Gothic, CenturyGothic; 
     box-sizing: border-box;
     word-wrap: break-word;
     font-kerning: none;
     letter-spacing: 0.45px;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
-    user-select: none;
+    user-select: none; */
   
     --darkGreen: #112121;     /* Colors */
     --lightGreen: #6ED190;
@@ -30,12 +30,13 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Century Gothic, CenturyGothic, sans-serif; 
+    font-family: Century Gothic, CenturyGothic; 
     background-color: #f0f4ff;
     /* background-image: linear-gradient(to bottom right, #6062c1, #75f7d2); */ }
 
 .audiowide{font-family: 'Audiowide', CenturyGothic;}
-.century{font-family: Century Gothic, CenturyGothic, sans-serif; }
+.century{font-family: Century Gothic, CenturyGothic;}
+.text-white{color: #fefdfd;}
 section{overflow: hidden !important;}
 ul li{list-style-type: none;}
 a{text-decoration: none;}
@@ -59,15 +60,13 @@ p {font-size: 17px; line-height: 25px;}
 /******* NAVBAR START *******/
 
 .sticky {position: fixed; top: 0; width: 100%; z-index: 999;}
-.sticky + .content {padding-top: 102px;}
-
+.navbar {padding-top: 0; padding-bottom: 0;}
 .navbar-inner {background-color:transparent;}
-.navbar{padding-top: 10px; padding-bottom: 10px;}
 .navbar-dark{background-color: #50067e;}
 .navbar-dark .navbar-brand{padding: 15px; margin-left: 0;}
 .logo{margin-left: 100px; width: 110px;}
-.navbar-dark .navbar-nav .nav-link{color: #fefdfd; font-size: 15px;}
-.navbar-dark .navbar-nav .nav-link:hover {color: #6ED190;}
+.navbar-dark .navbar-nav .nav-link{color: #fefdfd; font-size: 14px;}
+.navbar-dark .navbar-nav .nav-link:hover {color: yellow;}
 .navbar-expand-lg .navbar-nav .nav-link {padding-right: 2rem; padding-left: 2rem;}
   
 .nav-btn{color: #fefdfd; padding: 7px 12px; border: 1px solid #fefdfd;}
@@ -114,7 +113,7 @@ p {font-size: 17px; line-height: 25px;}
 
 
 /* header css start */  
-.header-section{color: #fefdfd; background-color: #50067e; padding-top: 60px;} 
+.header-section{color: #fefdfd; background-color: #50067e;} 
 .header-heading{color: #fefdfd; font-size: 50px; padding-top: 35px;}
 .header-img{margin-top: 40px; width: 70%; margin-left: 100px;}
 .see-more-btn{
@@ -192,14 +191,20 @@ p {font-size: 17px; line-height: 25px;}
     opacity: 0.9;
     margin-top: 0;}
 
-.card{
+.security-card{
     padding-top: 20px;
     color: #fefdfd;
     border-radius: 10px;
+    border-left: 3px solid #50067e;
+    border-right: 3px solid #50067e;
     background-image: linear-gradient(to bottom right, #50067e, #ce0b84);
+    transform: scale(1);
     transition: ease-in-out 0.7s;}
 
-.card:hover{
+.security-card:hover{
+    border-left: 3px solid #fefdfd;
+    border-right: 3px solid #fefdfd;
+    transform: scale(0.9);
     transition: ease-in-out 0.7s;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2), 0 0 20px 10px rgba(0, 0, 0, 0.29);}
 
@@ -237,7 +242,7 @@ p {font-size: 17px; line-height: 25px;}
 
 /* section-7 css start */
 .section-7-img{
-    background-image: url("../images/galaxy-bg.jpg"); 
+    background-image: url("../images/how-we-work/galaxy-bg.jpg"); 
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -298,7 +303,8 @@ p {font-size: 17px; line-height: 25px;}
     background-image: url("../images/sec-9-bg.png"); 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+    background-attachment: fixed;}
 
 .why-us img{width: 25%;}
 .why-us-card{padding: 15px; margin-top: 20px;}
