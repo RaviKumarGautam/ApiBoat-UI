@@ -1,4 +1,5 @@
 /******* ALL PAGES COMMON CSS START *******/
+p{font-size: 15px;}
 .all-pages-section{
     margin-top: 75px;
     background-image: url("../images/all-pages-section.jpg");
@@ -102,13 +103,46 @@
 
 
 
+/******* Products page CSS START *******/
+.products-section-2{color: #fefdfd; background-color: #50076e;} 
+
+.products-card{
+    padding: 10px;
+    text-align: center;
+    border: 2px dashed #fefdfd;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: ease-in-out 0.8s;}
+
+.products-card:hover{
+    box-shadow: 0 0 20px 5px rgba(90, 90, 90, 0.15), 0 0 20px 10px rgba(90, 90, 90, 0.2);
+    border: 2px dashed #50076e;
+    transform: scale(0.95);
+    transition: ease-in-out 0.8s;}
+
+.personalization-img{padding: 15px; transform: scale(1); transition: ease-in-out 0.8s;}
+.personalization-img:hover{transform: scale(0.92); transition: ease-in-out 0.8s;}
+
+.products-card-1{background-color: #e6cbff;}
+.products-card-2{background-color: #d6ffcb;}
+.products-card-3{background-color: #ffd2cc;}
+.products-card-4{background-color: #cdffed;}
+.products-card-5{background-color: #fff2ce;}
+.products-card-6{background-color: #d0edff;}
+
+
+
+
+
 
 /******* MEDIA QUERY START *******/
 @media screen and (min-device-width: 992px) and (max-device-width: 1199px) { 
+    .personalization-img{display: none;}
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
     .point-fingers{display: none;}
+    .security-img{display: none;}
 }
 
 @media screen and (min-device-width: 576px) and (max-device-width: 767px) {
@@ -124,6 +158,7 @@
     
     .who-we-are-heading{padding-top: 0;}
     .about-us-img{padding: 20px;}
-
     .point-fingers{display: none;}
+
+    .security-img{margin-left: 0;}
 }
