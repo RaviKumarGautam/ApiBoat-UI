@@ -34,7 +34,7 @@ p{font-size: 15px;}
     margin: 15px;
     text-align: center;
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px;
     transform: scale(1);
     transition: ease-in-out 0.9s;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2), 0 0 20px 10px rgba(0, 0, 0, 0.19);}
