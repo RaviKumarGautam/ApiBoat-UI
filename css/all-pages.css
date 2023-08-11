@@ -1,5 +1,4 @@
 /******* ALL PAGES COMMON CSS START *******/
-p{font-size: 15px;}
 .all-pages-section{
     margin-top: 75px;
     background-image: url("../images/all-pages-section.jpg");
@@ -28,12 +27,14 @@ p{font-size: 15px;}
 /* section-2 vision mission css start */
 .about-us-vector{
     background-image: url("../images/about-us-page/about-us-vector.png");
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;}
 
 .vision{
-    margin: 15px;
+    margin: 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 30px;
     transform: scale(1);
     transition: ease-in-out 0.9s;
@@ -45,7 +46,7 @@ p{font-size: 15px;}
     border-left: 4px solid #fefdfd;
     border-right: 4px solid #fefdfd;
     background-color: #50076e;
-    transform: scale(0.9);
+    transform: scale(0.93);
     transition: ease-in-out 0.9s;}
 
 .vision-img{width: 200px; padding: 20px 0;}
@@ -99,13 +100,13 @@ p{font-size: 15px;}
     background-attachment: fixed;
     background-size: cover;}
 
-.security-img{margin-left: 70px;}
+li.security-list{padding: 8px 0; font-size: 15px !important;}
+.security-img{padding: 10px;}
 
 
 
 /******* Products page CSS START *******/
 .products-section-2{color: #fefdfd; background-color: #50076e;} 
-
 .products-card{
     padding: 10px;
     text-align: center;
@@ -120,7 +121,7 @@ p{font-size: 15px;}
     transform: scale(0.95);
     transition: ease-in-out 0.8s;}
 
-.personalization-img{padding: 15px; transform: scale(1); transition: ease-in-out 0.8s;}
+.personalization-img{margin-top: 30px; padding: 15px; transform: scale(1); transition: ease-in-out 0.8s;}
 .personalization-img:hover{transform: scale(0.92); transition: ease-in-out 0.8s;}
 
 .products-card-1{background-color: #e6cbff;}
@@ -129,7 +130,6 @@ p{font-size: 15px;}
 .products-card-4{background-color: #cdffed;}
 .products-card-5{background-color: #fff2ce;}
 .products-card-6{background-color: #d0edff;}
-
 
 
 
@@ -155,7 +155,6 @@ p{font-size: 15px;}
 }
 
 @media screen and (min-device-width: 375px) and (max-device-width: 411px) { 
-    
     .who-we-are-heading{padding-top: 0;}
     .about-us-img{padding: 20px;}
     .point-fingers{display: none;}
